@@ -21,7 +21,7 @@ app.use(cors(corsOptions));
 app.use(morgan('dev'));
 
 // Set the frontend build directory
-app.use(express.static(path.join(__dirname, 'client/build'))); // Adjust path as per your frontend location
+app.use(express.static(path.join(__dirname, 'frontend', 'dist'))); // Adjust path as per your frontend location
 
 // API Routes
 app.use("/api/v1", user);
