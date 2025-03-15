@@ -21,16 +21,18 @@ app.use(cors(corsOptions));
 app.use(morgan('dev'));
 
 // Set the frontend build directory
-app.use(express.static(path.join(__dirname, '../frontend/dist'))); // Adjust path as per your frontend location
+app.use(express.static(path.join(__dirname, "Internship_project_2", "frontend", "dist")));
 
 // API Routes
 app.use("/api/v1", user);
 app.use("/api/t1", transaction);
 
-// Serve frontend in production
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/dist', 'index.html')); // Serve the React index.html for any other routes
-});
+// For any other route, serve the React index.html
+app.get("*", (req, res) => {
+    res.sendFile(
+      path.join(__dirname, "Internship_project_2", "frontend", "dist", "index.html")
+    );
+  }); // Adjust path as per your frontend location
 
 const PORT = process.env.PORT || 4000;
 
