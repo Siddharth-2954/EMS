@@ -21,7 +21,7 @@ app.use(cors(corsOptions));
 app.use(morgan('dev'));
 
 // Set the frontend build directory
-app.use(express.static(path.join(__dirname, "Internship_project_2", "frontend", "dist")));
+app.use(express.static(path.join(__dirname, "..", "frontend", "dist")));
 
 // API Routes
 app.use("/api/v1", user);
@@ -30,10 +30,9 @@ app.use("/api/t1", transaction);
 // For any other route, serve the React index.html
 app.get("*", (req, res) => {
     res.sendFile(
-      path.join(__dirname, "Internship_project_2", "frontend", "dist", "index.html")
+      path.join(__dirname, "..", "frontend", "dist", "index.html")
     );
-  }); // Adjust path as per your frontend location
-
+  });
 const PORT = process.env.PORT || 4000;
 
 // Connect to the database
