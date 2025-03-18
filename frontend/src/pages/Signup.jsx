@@ -11,7 +11,7 @@ const Signup = () => {
     const submitHandler = async (values) => {
         setLoading(true);
         try {
-            await axios.post('http://localhost:3000/api/v1/signup', values);
+            await axios.post('http://localhost:4000/api/v1/signup', values);
             navigate('/login');
         } catch (err) {
             console.error("Error occurred while Signing Up:", err);
