@@ -13,7 +13,7 @@ import moment from "moment";
 import Analytics from "../components/Layout/Analytics";
 const { RangePicker } = DatePicker;
 
-axios.defaults.baseURL = "http://localhost:4000";
+axios.defaults.baseURL = "http://localhost:3000";
 
 const HomePage = () => {
   const [showModal, setShowModal] = useState(false);
