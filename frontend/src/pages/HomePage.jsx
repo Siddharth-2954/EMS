@@ -13,7 +13,7 @@ import moment from "moment";
 import Analytics from "../components/Layout/Analytics";
 const { RangePicker } = DatePicker;
 
-axios.defaults.baseURL = "http://localhost:4000";
+axios.defaults.baseURL = "https://ems-backednd-1-2stzp1hsd-siddharth-s-projects-3f94c1f4.vercel.app";  //env
 
 const HomePage = () => {
   const [showModal, setShowModal] = useState(false);
