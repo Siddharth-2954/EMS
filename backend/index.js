@@ -22,3 +22,7 @@ app.use("/api/t1", transaction)
 app.listen(PORT, (req,res)=>{
     console.log("Server is started")
 })
+
+app.get("/", (req, res)=> {
+    res.send("Hello World");
+})
