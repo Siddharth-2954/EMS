@@ -11,7 +11,7 @@ const Signup = () => {
     const submitHandler = async (values) => {
         setLoading(true);
         try {
-            await axios.post('https://ems-backednd-1-2stzp1hsd-siddharth-s-projects-3f94c1f4.vercel.app/api/v1/signup', values);
+            await axios.post('http://localhost:4000/api/v1/signup', values);
             navigate('/login');
         } catch (err) {
             console.error("Error occurred while Signing Up:", err);

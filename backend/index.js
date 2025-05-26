@@ -8,7 +8,7 @@ const transaction = require("./routes/transactionRoutes")
 require("dotenv").config();
 
 const corsOptions = {
-    origin: "https://ems-frontend-git-master-siddharth-s-projects-3f94c1f4.vercel.app",
+    origin: "http://localhost:5173",
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"]
 }
