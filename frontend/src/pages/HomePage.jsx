@@ -13,7 +13,8 @@ import moment from "moment";
 import Analytics from "../components/Layout/Analytics";
 const { RangePicker } = DatePicker;
 
-axios.defaults.baseURL = "http://localhost:4000"; //env
+// axios.defaults.baseURL = "http://localhost:4000"; //env
+axios.defaults.baseURL = "https://expense-management-backend-lrn5.onrender.com";
 
 const HomePage = () => {
   const [showModal, setShowModal] = useState(false);
