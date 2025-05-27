@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 import { Form, Input } from 'antd';
 import axios from 'axios';
 
@@ -135,7 +135,7 @@ const Login = () => {
                     </button>
                     
                     <div style={{ marginTop: '24px', fontSize: '14px', color: '#666' }}>
-                        Don't have an account? <a href="https://expense-management-frontend-kznj.onrender.com/signup" style={{ color: '#764ba2', textDecoration: 'none', fontWeight: '500' }}>Sign up</a>
+                        Don't have an account? <Link to="/signup" style={{ color: '#764ba2', textDecoration: 'none', fontWeight: '500' }}>Sign up</Link>
                     </div>
                 </Form>
             </div>
