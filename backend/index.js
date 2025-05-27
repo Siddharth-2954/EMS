@@ -8,7 +8,8 @@ const transaction = require("./routes/transactionRoutes")
 require("dotenv").config();
 
 const corsOptions = {
-    origin: "http://localhost:5173",
+    // origin: "http://localhost:5173",
+    origin: "https://expense-management-frontend-kznj.onrender.com",
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"]
 }

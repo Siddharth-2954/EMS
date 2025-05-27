@@ -135,7 +135,7 @@ const Login = () => {
                     </button>
                     
                     <div style={{ marginTop: '24px', fontSize: '14px', color: '#666' }}>
-                        Don't have an account? <a href="http://localhost:5173/signup" style={{ color: '#764ba2', textDecoration: 'none', fontWeight: '500' }}>Sign up</a>
+                        Don't have an account? <a href="https://expense-management-frontend-kznj.onrender.com/signup" style={{ color: '#764ba2', textDecoration: 'none', fontWeight: '500' }}>Sign up</a>
                     </div>
                 </Form>
             </div>
