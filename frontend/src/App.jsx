@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import {HashRouter, Routes, Route} from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import Signup from './pages/Signup'
 import Login from './pages/Login'
@@ -8,13 +8,13 @@ import { Navigate } from 'react-router-dom'
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path='/signup' element={<Signup/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/' element={<ProtectedRoutes><HomePage/></ProtectedRoutes>}/>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   )
 }
