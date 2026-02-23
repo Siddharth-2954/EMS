@@ -11,7 +11,8 @@ const corsOptions = {
     // origin: "http://localhost:5173",
     origin: "https://expense-management-frontend-kznj.onrender.com",
     methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization"]
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true
 }
 app.use(cors(corsOptions))
 
